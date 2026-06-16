@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD93D">
+
+    <!-- Back Button -->
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back"
+        android:textAllCaps="false"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/momina"/>
+
+    <!-- Center Content -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap the Color"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/momina"/>
+
+        <ImageView
+            android:id="@+id/imgColor"
+            android:layout_width="220dp"
+            android:layout_height="217dp"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="RED"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/momina"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="BLUE"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/momina"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:text="GREEN"
+            android:textColor="#000000"
+            android:fontFamily="@font/momina"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Next Question"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/momina"/>
+
+    </LinearLayout>
+
+    <!-- Fixed AI Button -->
+
+    <ImageButton
+        android:id="@+id/btnAI"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/ai_circle"
+        android:padding="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_star"
+        android:tint="#00000000"/>
+
+</RelativeLayout>

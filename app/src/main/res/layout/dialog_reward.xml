@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/rewardStar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/star_reward"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amazing!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFB800"/>
+
+    <TextView
+        android:id="@+id/txtReward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5 Stars"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+</LinearLayout>

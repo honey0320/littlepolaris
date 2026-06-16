@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/lp_popup_bg">
+
+    <!-- Close Button -->
+    <TextView
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❌"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🤖 Polaris AI"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ask me anything"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"/>
+
+    <!-- Input Box -->
+    <EditText
+        android:id="@+id/edtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/txtSubtitle"
+        android:layout_marginTop="18dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="top|start"
+        android:hint="Type your question..."
+        android:textColor="#000000"
+        android:padding="15dp"/>
+
+    <!-- Button Row -->
+    <LinearLayout
+        android:id="@+id/buttonRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtQuestion"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- MIC -->
+        <ImageButton
+            android:id="@+id/btnMic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:contentDescription="Mic"/>
+
+        <!-- ASK BUTTON -->
+        <Button
+            android:id="@+id/btnAsk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="ask AI"
+            android:textColor="#000000"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- RESPONSE BOX -->
+    <TextView
+        android:id="@+id/txtResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRow"
+        android:layout_marginTop="18dp"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:background="#FFFFE0"
+        android:text="Your answer will appear here 💬"/>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- 🌟 Primary Cartoon Yellow Theme -->
+    <color name="lp_yellow">#FFF3B0</color>
+    <color name="lp_yellow_dark">#FFB300</color>
+    <color name="lp_yellow_light">#FFF8D6</color>
+
+    <!-- 🍫 Text Brown Theme -->
+    <color name="lp_brown_dark">#3E2723</color>
+    <color name="lp_brown">#5D4037</color>
+    <color name="lp_brown_light">#8D6E63</color>
+
+    <!-- 🤍 Neutral -->
+    <color name="lp_white">#FFFFFF</color>
+    <color name="lp_black">#000000</color>
+
+    <!-- ⭐ Success / Reward -->
+    <color name="lp_green">#4CAF50</color>
+
+    <!-- ❌ Error -->
+    <color name="lp_red">#E53935</color>
+
+</resources>
